@@ -1,0 +1,29 @@
+body {
+    background-image: url('assets/images/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('assets/images/hero.png'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid white; /* White border */
+}
+
+footer {
+    background: #333;
+}

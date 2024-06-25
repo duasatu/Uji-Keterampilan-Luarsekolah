@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Toko Kaos Haris</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .basket-icon {
+            position: relative;
+        }
+        .basket-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body data-page="catalog">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Toko Kaos Haris</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Masuk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Daftar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Pilihan Baju</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link basket-icon" href="checkout.html">
+                        <img src="assets/icons/basket.png" alt="Basket" width="24">
+                        <span class="basket-count" id="basketCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2>Silahkan Dipilih</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="javascript:void(0);" onclick="addToBasket('Kaos Jepang', 100000, 'Kaos dengan desain Jepang yang unik dan elegan.', 'Kaos Jepang.jpg')">
+                        <img src="assets/images/Kaos Jepang.jpg" class="card-img-top" alt="Kaos 1">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Kaos Jepang</h5>
+                        <p class="card-text">Rp. 100,000</p>
+                        <button class="btn btn-primary" onclick="addToBasket('Kaos Jepang', 100000, 'Kaos dengan desain Jepang yang unik dan elegan.', 'Kaos Jepang.jpg')">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="javascript:void(0);" onclick="addToBasket('Hitam Polos', 150000, 'Kaos hitam polos yang klasik dan serbaguna.', 'Hitam Polos.jpg')">
+                        <img src="assets/images/Hitam Polos.jpg" class="card-img-top" alt="kaos 2">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Hitam Polos</h5>
+                        <p class="card-text">Rp. 150,000</p>
+                        <button class="btn btn-primary" onclick="addToBasket('Hitam Polos', 150000, 'Kaos hitam polos yang klasik dan serbaguna.', 'Hitam Polos.jpg')">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="javascript:void(0);" onclick="addToBasket('Panda', 200000, 'Kaos dengan gambar panda yang lucu dan menarik.', 'Panda.jpg')">
+                        <img src="assets/images/Panda.jpg" class="card-img-top" alt="Kaos 3">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Panda</h5>
+                        <p class="card-text">Rp. 200,000</p>
+                        <button class="btn btn-primary" onclick="addToBasket('Panda', 200000, 'Kaos dengan gambar panda yang lucu dan menarik.', 'Panda.jpg')">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <a href="javascript:void(0);" onclick="addToBasket('Anime Girl', 250000, 'Kaos dengan gambar Anime Girl yang populer dan keren.', 'Anime Girl.jpg')">
+                        <img src="assets/images/Anime Girl.jpg" class="card-img-top" alt="Kaos 4">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Girl</h5>
+                        <p class="card-text">Rp. 250,000</p>
+                        <button class="btn btn-primary" onclick="addToBasket('Anime Girl', 250000, 'Kaos dengan gambar Anime Girl yang populer dan keren.', 'Anime Girl.jpg')">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 Toko Kaos Haris. All Rights Reserved.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
